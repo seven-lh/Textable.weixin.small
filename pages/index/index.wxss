@@ -1,0 +1,58 @@
+/**index.wxss**/
+
+.container {
+  
+}
+
+.row {
+  /*width: 45%;*/
+  height: 100;
+  /*justify-content: center;*/
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  
+  background-color: limegreen;
+  border-radius: 5px;
+}
+.row {
+ text-align: center
+}
+.name{
+  color:aliceblue;
+  font-size: 20rpx;
+  margin-bottom: 5px;
+  height: 30rpx;
+}
+.art{
+  color:cornsilk;
+  font-size:24rpx;
+}
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: justify;
+}
+.child {
+  box-sizing: border-box;
+  flex:  45%;
+  /*height: 50px;*/
+}
+
+.section-id{
+  text-align: center;
+  padding:5px 0;
+
+}
+.copyed{
+  color:chocolate;
+  text-shadow: 1px,1px,1px,chocolate;
+}
+.copyed-art{
+  text-align: center;
+  color: white;
+  height: 1px;
+  overflow: hidden;
+  /*display: none;*/
+}

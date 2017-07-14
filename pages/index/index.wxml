@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container box faces-list ">
+  <view class="copyed">
+    <text>点击卡片会自动拷贝 尽情的去粘贴发送吧 </text>
+    <view class="copyed-art">{{copyedArt}}</view>
+  </view>
+  <block wx:for="{{faces}}" wx:for-item="face" wx:key="*this">
+    <view class="section-block">
+      <view class="section-id">
+      {{face.category}}
+      </view>
+      <view class="parent">
+      <block wx:for="{{face.items}}" wx:for-item="face" wx:key="*this">
+      <view class="row child"  data-art="{{face.art}}" bindtap="tapClip">
+        <view class="name">{{face.name}}</view>
+        <view class="art">{{face.art}}</view>
+      </view>
+      </block>
+      </view>
+    </view>
+
+
+  </block>
+</view>
